@@ -1,0 +1,40 @@
+.advanteges{
+    margin-top: 70px;
+    margin-bottom: 80px;
+    &__icons{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        width: 270px;
+        text-align: center;
+
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #0D0D0D;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        span {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 29px;
+        }
+        a {
+            text-decoration-line: underline;
+            color: #FF0000;
+            &:hover{
+                color: #FF0000;  
+            }
+        }
+
+    }
+}
