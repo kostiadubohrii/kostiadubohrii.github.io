@@ -136,6 +136,7 @@
                 margin-left: 0px;
             }
             li {
+                position: relative;
                 color: #555555;
                 font-size: 14px;
                 font-weight: 300;
@@ -151,5 +152,20 @@
                 }
             }
         }
-    }       
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            color: #C70101;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-transform: uppercase;
+            &:hover {
+                color: #C70101;
+            }
+        }
+    }
 }
