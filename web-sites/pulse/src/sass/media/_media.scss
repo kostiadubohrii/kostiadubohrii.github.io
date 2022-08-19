@@ -27,6 +27,7 @@
     }
     .promo {
         max-height: 550px;
+        padding: 21px 10px 93px 10px;
         &__header {
             font-size: 35px;
         }
@@ -39,6 +40,13 @@
         }
     }
 
+    .consultation {
+        min-height: 650px;
+        padding: 70px 10px 50px 10px;
+        &__descr {
+            text-align: center;
+        }
+    }
 
     .advanteges {
         &__icons {
@@ -47,48 +55,79 @@
             justify-content: center;
         }
     }
+
+
+    .carousel {
+        padding: 81px 0;
+        &__inner {
+            position: relative;
+            max-width: 380px;
+            margin: 0 auto;
+        }
+    }
+
+    .catalog__tabs {
+        max-width: 540px;
+        margin: 70px auto;
+        .catalog__tab {
+            font-size: 16px;
+        }
+    }
+
+    .catalog__content{
+        margin: 0 auto;
+    }
+
+    .feed-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+        &__wrapper {
+            max-width: 500px;
+            padding: 10px;
+        }
+        &__icon {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &__name {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            color: #0D0D0D;
+            text-align: center;
+
+        }
+        &__marafones {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #646464;
+            text-align: center;
+
+        }
+        &__comment {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            color: #0D0D0D;
+            margin-top: 20px;
+        }
+    
+    }
+
 
 }
 
-@media (max-width: 768px) {
-    .hide {
-        display: none;
-    }
-    .title {
-        font-size: 28px;
-    }
-    .header {
-        justify-content: space-around;
-        &__logo {
-            width: 230px;
+@media (max-width: 575px) {
+    .catalog__tabs {
+        max-width: 390px;
+        margin: 70px auto;
+        .catalog__tab {
+            font-size: 13px;
         }
-        &__phone {
-            font-size: 17px;
-        }
-    }
-    .promo {
-        max-height: 550px;
-        &__header {
-            font-size: 35px;
-        }
-        &__subheader {
-            font-size: 19px;
-        }
-        &__icons {
-            margin-top: 60px;
-            width: 370px;
-        }
-    }
-
-
-    .advanteges {
-        &__icons {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-
+    }   
 }
 
 @media (max-width: 425px) {
@@ -130,7 +169,7 @@
 
     .consultation {
         min-height: 600px;
-        padding: 70px 0 50px 0;
+        padding: 70px 10px 50px 10px;
         &__descr {
             text-align: center;
         }
@@ -141,14 +180,29 @@
 
     }
 
+    .carousel {
+        padding: 81px 0;
+        &__inner {
+            position: relative;
+            max-width: 330px;
+            margin: 0 auto;
+        }
+    }
 
+    .catalog__tabs {
+        max-width: 340px;
+        margin: 70px auto;
+        .catalog__tab {
+            font-size: 12px;
+        }
+    }  
 }
 @media (max-width: 360px) {
     .container {
         max-width: 380px;
     }
     .title {
-        font-size: 24px;
+        font-size: 22px;
     }
     .header {
         justify-content: space-around;
@@ -182,4 +236,28 @@
     .title_left {
         font-size: 20px;
     }
+
+
+    .carousel {
+        padding: 81px 0;
+        &__inner {
+            position: relative;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+    }
+
+    .catalog__tabs {
+        max-width: 280px;
+        margin: 70px auto;
+        .catalog__tab {
+            height: 40px;
+            font-size: 9px;
+            div {
+                line-height: 38px;
+            }
+        }
+    }  
+
+
 }

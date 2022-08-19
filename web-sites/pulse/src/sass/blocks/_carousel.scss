@@ -4,6 +4,9 @@
         position: relative;
         width: 750px;
         margin: 0 auto;
+        img {
+            width: 100%;
+        }
     }
 
     .slick-prev,.slick-next {
@@ -22,5 +25,25 @@
        right: -66px;
        left: auto;
     }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding-left: 0;
+        button {
+            margin-right: 10px;
+            margin-top: 10px;
+            border: none;
+            background: #fff;
+            box-shadow: 1px 1px 10px rgba($color: #000000, $alpha: .5);
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+
+
+        }
+    }
+    
 }
 
