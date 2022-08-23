@@ -10,6 +10,6 @@
 	"browser": true,
 	"devel": true,
 	"jquery": true,
-    "esversion": 11,
+    "esversion": 10,
     "node": true
 }
