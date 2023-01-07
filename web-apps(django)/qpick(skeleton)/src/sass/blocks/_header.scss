@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 30px;
+    img {
+        cursor: pointer;
+    }
+    &_distributor {
+        width: 33%;
+        &:first-child{
+            width: 10%;
+        }
+        &:nth-child(3){
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+    form {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        .search {
+            height: 30px;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+        }
+        .find {
+            background: url(../icons/search-icon.svg) no-repeat center;
+            height: 30px;
+            border-radius: 15px;
+            border: none;
+            padding: 15px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    }
+
+    &_select {
+        display: flex;
+        width: 100%;
+        p {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #101010;
+            cursor: pointer;
+        }
+        img {
+            margin-right: 10px;
+            &:last-child{
+                margin-left: 8px;
+                margin-right: 0;
+            }
+        }
+    }
+
+    &_manipulator {
+        a{
+            position: relative;
+            margin-right: 25px;
+            text-decoration: none;
+            &:last-child {
+                margin-right: 0px;
+            }
+            div {
+                position: absolute;
+                right: -6px;
+                text-decoration: none;
+                top: -14px;
+                background-color: #FFA542;
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 13px;
+            }
+            &:nth-child(2) {
+                div {
+                    right: -12px;  
+                }
+            }
+        }
+    }
+}

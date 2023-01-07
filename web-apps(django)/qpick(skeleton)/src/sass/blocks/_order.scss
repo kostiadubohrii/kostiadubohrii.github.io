@@ -1,0 +1,255 @@
+.wrapper {
+    width: 933px;
+    margin: 0 auto;
+    .order_title {
+        display: block;
+    }
+}
+form {
+    margin-top: 15px;
+    input {
+        &::placeholder {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #8E8E8E;
+        }
+    }
+    .city {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        label {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #8E8E8E;
+        }
+        #cities {
+            background-color: #D6D6D6;
+            border: none;
+            cursor: pointer;
+            width: 100px;
+            text-align: center;
+        }
+
+    }
+    .form_input {
+        width: 368px;
+        height: 45px;
+        background: #D6D6D6 url(../icons/edit.svg) no-repeat center;
+        border-radius: 15px;
+        padding: 0px 15px 0px 15px;
+        border: none;
+        margin-bottom: 10px;
+        background-position:  right 15px bottom 50%;
+        
+    }
+    .form_input_none {
+        background-image: none;
+    }
+    .form_input_long {
+        width: 418px;
+        margin-top: 20px;
+    }
+    .house {
+        width: 368px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .form_input_short {
+            display: block;
+            width: 164px;
+            height: 45px;
+        }
+    }
+
+}
+.order {
+    width: 933px;
+    margin: 0 auto;
+    margin-top: 15px;
+    justify-content: space-between;
+    display: flex;
+    &_data {
+        width: 445px;
+        min-height: 513px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        padding: 23px 31px 31px 31px;
+        display: flex;
+        flex-direction: column;
+        &_title {
+            display: flex;
+            justify-content: space-between;
+        }
+        &_sub_title {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            margin-top: 22px;
+            color: #000000;
+            img {
+                margin-right: 10px;
+            }
+            div {
+                display: inline;
+            }
+        }
+        &_map {
+            width: 375px;
+            height: 146px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+       
+
+    }
+    &_bill {
+        &_total {
+            width: 444.44px;
+            min-height: 155px;
+            padding: 15px 20px 0px 20px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+
+            &_list {
+                margin-top: 25px;
+                position: relative;
+                .list_item {
+                    display: flex;
+                    position: relative;
+                    margin-bottom: 12px;
+                    div {
+                        &:nth-child(1) {
+                            width: 36px;
+                        }
+                        &:nth-child(2) {
+                            max-width: 310px;
+                        }
+                        &:nth-child(3) {
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                }
+                .delivery {
+                    display: flex;
+                    position: relative;
+                    margin-left: 36px;
+                    div {
+                        &:nth-child(2) {
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+            &_pay {
+                display: flex;
+                position: relative;
+                margin-left: 36px;
+                margin-top: 10px;
+                div {
+                    &:nth-child(2) {
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+        &_payment {
+            width: 445px;
+            min-height: 127px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            padding: 15px;
+            margin-top: 14px;
+            .visa_bill {
+                display: flex;
+                position: relative;
+                align-items: center;
+                margin-top: 17px;
+                margin-bottom: 20px;
+                div {
+                    &:nth-child(1) {
+                        width: 25px;
+                    }
+                    &:nth-child(3) {
+                        position: absolute;
+                        right: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .promocode {
+                display: flex;
+                position: relative;
+                align-items: center;
+                div {
+                    &:nth-child(1) {
+                        width: 25px;
+                    }
+                    &:nth-child(2) {
+                        color: #8E8E8E;
+                    }
+                    &:nth-child(3) {
+                        position: absolute;
+                        right: 5px;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+        }
+        &_phone {
+            width: 441px;
+            min-height: 124px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            padding: 15px 11.5px 23px 11.5px;
+            margin-top: 20px;
+            form {
+                margin-top: 0;
+            }
+        }
+        &_finish {
+            width: 447px;
+            height: 45px;
+            background: #101010;
+            box-shadow: 0px 0px 20px rgba(67, 216, 84, 0.25);
+            border-radius: 10px;
+            margin-top: 28px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}
+
+.modal {
+    width: 730px;
+    height: 95px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 515px;
+}

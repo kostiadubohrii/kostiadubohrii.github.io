@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QPICK - Оформлення заказу</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper_devider">
+        <div>
+            <div class="container">
+                <div class="header">
+                    <div class="header_distributor">
+                        <a href="index.html" class="logo">QPICK</a>
+                    </div>
+        
+                    <div class="header_distributor">
+                        <!-- <form method="POST" class="search">
+                            <input type="text" name="search" class="search" id="search" placeholder="Пошук">
+                            <input type="submit" value="" class="find">
+                        </form> -->
+                    </div>
+        
+                    <div class="header_distributor">
+                        <div class="header_manipulator">
+                            <a href="favourites.html"><img src="icons//header/heart.svg" alt="heart"></a>
+                            <a href="basket.html"><img src="icons//header/trolley.svg" alt="trolley"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="order_title page_title">Оформлення заказу</div>
+                </div>
+                <div class="order">
+                    <div class="order_data">
+                        <div class="order_data_title">
+                            <div class="sml_title">Доставка кур'єром</div>
+                            <div class="price">499 ₴</div>
+                        </div>
+                        
+                        <div class="order_data_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9663.884811908038!2d30.230586941019197!3d50.52108871477174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b3216e94dd5db%3A0x5ce36944e7698f34!2z0JjRgNC_0LXQvdGMLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsA!5e0!3m2!1sru!2suk!4v1666093171357!5m2!1sru!2suk" width="375" height="146" style="border:0; border-radius: 10px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="order_data_sub_title">
+                            <img src="icons/mark.svg" alt="mark">
+                            <div>Адрес доставки</div>
+                        </div>
+                        
+                        <form action="#">
+                            <div class="city form_input form_input_none">
+                                <label for="cities">Місто</label>
+                                <select id="cities" name="cities" class="select_city">
+                                    <option value="Київ">Київ</option>
+                                    <option value="Львів">Львів</option>
+                                    <option value="Одеса">Одеса</option>
+                                </select>
+                            </div>
+                          
+                            <input type="text" placeholder="Вулиця / Район" name="street-region" id="street-region" class="form_input">
+                            <div class="house">
+                                <input type="text" placeholder="Дім" name="building" id="building" class="form_input form_input_short">
+                                <input type="text" placeholder="Квартира" name="apartments" id="apartments" class="form_input form_input_short">
+                                <input type="text" placeholder="Під'їзд" name="entrance" id="entrance" class="form_input form_input_short">
+                            </div>
+                        </form>
+        
+                    </div>
+                    <div class="order_bill">
+                        <div class="order_bill_total">
+                            <div class="title title-black">Ваше замовлення</div>
+        
+                            <div class="order_bill_total_list">
+                                <div class="list_item">
+                                    <div class="amount">
+                                        1x
+                                    </div>
+                                    <div class="items">
+                                        Навушники Apple BYZ S852I
+                                    </div>
+                                    <div class="price">
+                                        ₴ 2 927
+                                    </div>
+                                </div>
+        
+                                <div class="delivery">
+                                    <div class="items">
+                                        Доставка
+                                    </div>
+                                    <div class="price">
+                                        ₴ 499
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="order_bill_total_pay">
+                                <div class="items">
+                                    До сплати
+                                </div>
+                                <div class="price">
+                                    ₴ 3 426
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_bill_payment">
+                            <div class="title title-black">Спосіб сплати</div>
+        
+                            <!-- Бургерменю -->
+                            <div class="visa_bill">
+                                <div>
+                                    <img src="icons/visa.svg" alt="visa"></div>
+                                <div>
+                                    Рахунок на kaspi.ua
+                                </div>
+                                <div>
+                                    <img src="icons/down_arrow.svg" alt="arrow">
+                                </div>
+                            </div>
+                            <div class="promocode">
+                                <div>
+                                    <img src="icons/promo.svg" alt="promo">
+                                </div>
+                                <div>
+                                    Є промокод?
+                                </div>
+                                <div>
+                                    <img src="icons/right-arrow.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_bill_phone">
+                            <div class="title title-black">Номер отримувача</div>
+                            <form action="#">
+                                <input type="text" placeholder="+38 ___ ___ __ __ " name="phone" id="phone" class="form_input form_input_long" >
+                            </form>
+                        </div>
+                        <div class="order_bill_finish">
+                            Закінчити оформлення
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="modal">
+                    Номер вашого заказу №123123, з вами зв'яжиться наший менеджер. 
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="footer">
+                    <div>
+                        <a href="index.html" class="logo">QPICK</a>
+                    </div>
+                    <div>
+                        <a href="favourites.html" class="links">Улюблене</a>
+                        <a href="basket.html" class="links">Корзина</a>
+                        <a href="contacts.html" class="links">Контакти</a>
+                    </div>
+                    <div>
+                        <div class="terms">
+                            <a href="terms.html" class="links">Умови сервіса</a>
+                            <!-- <div>
+                                <div class="lengs">
+                                    <img src="icons/earth.svg" alt="earth">
+                                    <p>
+                                        <span>Укр</span>
+                                    </p>
+                                    <p>Eng</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div>
+                        <img src="icons/social/instagram.svg" alt="instagram" class="socials">
+                        <img src="icons/social/telegram.svg" alt="telegram" class="socials">
+                        <img src="icons/social/whatsapp.svg" alt="whatsapp" class="socials">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
