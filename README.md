@@ -10,10 +10,16 @@ There are directories with my projects.
 
 
 
-```diff - ### **web-sites** ```
+### **web-sites**
 | There are just single page sites with HTML, CSS( SASS or SCSS ) and JS.
+List of sites:
+  - [Pulse](https://kostiadubohrii.github.io/web-sites/pulse/src/)
+  - [UBER](https://kostiadubohrii.github.io/web-sites/UDER_course/src/)
+  - [Food](https://kostiadubohrii.github.io/web-sites/food/)
+
 
 ### **web-apps(django)**
   | This directory includes only web-apps that was created using django framework. The QPick it is an exaple or unreal shop that producing some gadgets.
+  - [QPick](https://kostiadubohrii.github.io/web-apps(django)/qpick(skeleton)/src/index.html)
 ### **web-apps**
   | "It is about" React "web-apps."
