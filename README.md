@@ -14,5 +14,5 @@ There are directories with my projects.
  | This directory includes only web-apps that was created using django framework. The QPick it is an exaple or unreal shop that producing some gadgets.
 ### web-apps 
 ``` ruby
-  | It is about React web-apps. 
+  "It is about" React "web-apps."
 ```
