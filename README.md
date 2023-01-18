@@ -10,7 +10,7 @@ There are directories with my projects.
 
 
 
-- ### **web-sites**
+```diff - ### **web-sites** ```
 | There are just single page sites with HTML, CSS( SASS or SCSS ) and JS.
 
 ### **web-apps(django)**
