@@ -1,0 +1,92 @@
+{% extends "base.html"%}
+{% load static %}
+
+<!--header-->
+
+    {% block page_title %}
+        {{name}}
+    {% endblock  %}
+
+<!--header-->
+
+<!--content-->
+
+{% block search_panel%}
+    <form method="POST" class="search">
+        <input type="text" name="search" class="search" id="search" placeholder="Find">
+        <input type="submit" value="" class="find">
+    </form>
+{% endblock search_panel%}
+
+{% block content %}
+    <div class="container">
+        <div class="banner">
+            <div class="banner_title">
+                <h2>Accessories for
+                    Iphone 13 Pro Max</h2>
+            </div>
+            <div class="banner_image">
+                <img src={% static "images/banner_image.png" %} alt="Iphone">
+            </div>
+        </div>
+    </div>
+
+{% for category in top_category %}
+        <div class="container">
+            <div class="title">{{category}}</div>
+            <div class="catalog">
+                {% for product_image in product_images_list %}
+                    {% if product_image.product.category == category %}
+                        <div class="catalog_item">
+                            <div class="catalog_item_top">
+                                <div class="catalog_item_top_heart" >
+                                    <img src={% static "icons/hearts/empty_heart.svg" %} alt="heart" class="heart-icon" id="add-item-fav">
+                                </div>
+                                <a href="{% url 'product' product_image.product.id %}">
+                                    <div class="catalog_item_top_image">
+                                           <img src={{ product_image.image.url }} alt="headphones">
+                                    </div>
+                                </a>
+
+                                <div class="catalog_item_top_apple">
+                                    {% if product_image.product.is_apple == True %}
+                                        <img src={% static "icons/apple.svg" %} alt="apple">
+                                    {% else %}
+
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="catalog_item_desc">
+                                <div class="item_name">{{ product_image.product.name }}</div>
+                                <div class="item_price">
+                                    {{ product_image.product.price }} £<br>
+                                         {% if product_image.product.old_price%}
+                                         <span>{{ product_image.product.old_price }} £</span>
+                                        {% endif %}
+
+                                </div>
+                            </div>
+                            <div class="catalog_item_review">
+                                <img src={% static "icons/star.svg" %} alt="star">
+                                <span>{{ product_image.product.review }}</span>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+{% endfor %}
+{% endblock content%}
+
+<!--content-->
+
+
+
+
+
+
+
+
+
+
+<!--footer--><!--footer-->

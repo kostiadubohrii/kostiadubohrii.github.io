@@ -20,6 +20,6 @@ List of sites:
 
 ### **web-apps(django)**
   | This directory includes only web-apps that was created using django framework. The QPick it is an exaple or unreal shop that producing some gadgets.
-  - [QPick](https://kostiadubohrii.github.io/web-apps(django)/qpick(skeleton)/src/index.html)
+  - [QPick](https://kostiadubohrii.github.io/web-apps(django)/qpick(skeleton)/src/index.html) - just HTML and CSS
 ### **web-apps**
   | "It is about" React "web-apps."

@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QPICK - Улюблене</title>
+    <link rel="stylesheet" href={% static "css/style.min.css" %}>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper_devider">
+        <div>
+            <div class="container">
+                <div class="header">
+                    <div class="header_distributor">
+                        <a href={% url 'index'%} class="logo" >QPICK</a>
+                    </div>
+        
+                    <div class="header_distributor">
+                        <!-- <form method="POST" class="search">
+                            <input type="text" name="search" class="search" id="search" placeholder="Пошук">
+                            <input type="submit" value="" class="find">
+                        </form> -->
+                    </div>
+        
+                    <div class="header_distributor">
+                        <div class="header_manipulator">
+                              <a href={% url 'favourites' %}><img src={% static "icons//header/heart.svg" alt="heart %} ></a>
+                            <a href={% url 'basket' %}><img src={% static "icons//header/trolley.svg" alt="trolley %}></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="page_title">Улюблене</div>
+                <div class="title">Навушники</div>
+        
+                <div class="catalog">
+                    
+                    <div class="catalog_item">
+                        <div class="catalog_item_top">
+                            <div class="catalog_item_top_heart">
+                                <img src={% static "icons/hearts/solid_heart.svg" %} alt="heart" class="heart-icon">
+                            </div>
+                            <div class="catalog_item_top_image">
+                                <img src="images/head-phones_catalog/apple_earpods.png" alt="headphones">
+                            </div>
+                            <div class="catalog_item_top_apple">
+                                <!-- <img src="icons/apple.svg" alt="apple"> -->
+                            </div>
+                        </div>
+                        <div class="catalog_item_desc">
+                            <div class="item_name">Apple BYZ S852I</div>
+                            <div class="item_price">
+                                2327 ₴ <br>
+                                <!-- <span>3527 ₴</span> -->
+                            </div>
+                        </div>
+                        <div class="catalog_item_review">
+                            <img src={% static "icons/star.svg" %} alt="star">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_top">
+                            <div class="catalog_item_top_heart">
+                               <img src={% static "icons/hearts/solid_heart.svg" %} alt="heart" class="heart-icon">
+                            </div>
+                            <div class="catalog_item_top_image">
+                                <img src="images/head-phones_catalog/apple_earpods_case.png" alt="headphones">
+                            </div>
+                            <div class="catalog_item_top_apple">
+                                <!-- <img src="icons/apple.svg" alt="apple"> -->
+                            </div>
+                        </div>
+                        <div class="catalog_item_desc">
+                            <div class="item_name">Apple BYZ S852I</div>
+                            <div class="item_price">
+                                2327 ₴ <br>
+                                <!-- <span>3527 ₴</span> -->
+                            </div>
+                        </div>
+                        <div class="catalog_item_review">
+                            <img src={% static "icons/star.svg" %} alt="star">
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_top">
+                            <div class="catalog_item_top_heart">
+                                <img src={% static "icons/hearts/solid_heart.svg" %} alt="heart" class="heart-icon">
+                            </div>
+                            <div class="catalog_item_top_image">
+                                <img src="images/head-phones_catalog/apple_byz_s852i.png" alt="headphones">
+                            </div>
+                            <div class="catalog_item_top_apple">
+                                <!-- <img src="icons/apple.svg" alt="apple"> -->
+                            </div>
+                        </div>
+                        <div class="catalog_item_desc">
+                            <div class="item_name">Apple BYZ S852I</div>
+                            <div class="item_price">
+                                2927 ₴ <br>
+                                <span>3527 ₴</span>
+                            </div>
+                        </div>
+                        <div class="catalog_item_review">
+                            <img src={% static "icons/star.svg" %} alt="star">
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="title">Бездротові навушники</div>
+        
+                <div class="catalog">
+                    <div class="catalog_item">
+                        <div class="catalog_item_top">
+                            <div class="catalog_item_top_heart">
+                                <img src={% static "icons/hearts/solid_heart.svg" %} alt="heart" class="heart-icon">
+                            </div>
+                            <div class="catalog_item_top_image">
+                                <img src="images/head-phones_catalog/apple_airpods.png" alt="headphones">
+                            </div>
+                            <div class="catalog_item_top_apple">
+                                <img src="icons/apple.svg" alt="apple">
+                            </div>
+                        </div>
+                        <div class="catalog_item_desc">
+                            <div class="item_name">Apple AirPods</div>
+                            <div class="item_price">
+                                9527 ₴ <br>
+                                <!-- <span>3527 ₴</span> -->
+                            </div>
+                        </div>
+                        <div class="catalog_item_review">
+                            <img src={% static "icons/star.svg" %} alt="star">
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="catalog_item">
+                        <div class="catalog_item_top">
+                            <div class="catalog_item_top_heart">
+                                <img src={% static "icons/hearts/solid_heart.svg" %} alt="heart" class="heart-icon">
+                            </div>
+                            <div class="catalog_item_top_image">
+                                <img src="images/head-phones_catalog/apple_airpods_pro.png" alt="headphones">
+                            </div>
+                            <div class="catalog_item_top_apple">
+                                <!-- <img src="icons/apple.svg" alt="apple"> -->
+                            </div>
+                        </div>
+                        <div class="catalog_item_desc">
+                            <div class="item_name">GERLAX GH-04</div>
+                            <div class="item_price">
+                                6527 ₴ <br>
+                                <span>3527 ₴</span>
+                            </div>
+                        </div>
+                        <div class="catalog_item_review">
+                            <img src={% static "icons/star.svg" %} alt="star">
+                            <span>4.7</span>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="footer">
+                    <div>
+                        <a href={% url 'index'%} class="logo" >QPICK</a>
+                    </div>
+                    <div>
+                        <a href={% url "favourites" %} class="links">Улюблене</a>
+                        <a href={% url "basket" %} class="links">Корзина</a>
+                        <a href={% url "contacts" %} class="links">Контакти</a>
+                    </div>
+                    <div>
+                        <div class="terms">
+                            <a href={% url "terms" %} class="links">Умови сервіса</a>
+                            <!-- <div>
+                                <div class="lengs">
+                                    <img src="icons/earth.svg" alt="earth">
+                                    <p>
+                                        <span>Укр</span>
+                                    </p>
+                                    <p>Eng</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div>
+                        <img src={% static "icons/social/instagram.svg" %} alt="instagram" class="socials">
+                        <img src={% static "icons/social/telegram.svg" %} alt="telegram" class="socials">
+                        <img src={% static "icons/social/whatsapp.svg" %} alt="whatsapp" class="socials">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

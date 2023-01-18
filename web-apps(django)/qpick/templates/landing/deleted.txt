@@ -1,0 +1,12 @@
+{% url 'index'%} - головна
+{% url 'favourites' %}
+{% url 'basket' %}
+
+
+{% url 'index'%}
+{% url "favourites" %}
+{% url "basket" %}
+{% url "contacts" %}
+{% url "terms" %}
+
+{% url "apple_airpods" %}

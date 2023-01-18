@@ -1,0 +1,85 @@
+{% extends "base.html"%}
+{% load static %}
+
+<!--header-->
+
+    {% block page_title %}
+        {{name}}
+    {% endblock  %}
+
+<!--header-->
+
+<!--content-->
+    {% block content %}
+        {% if amount_of_products_in_basket == 0 %}
+            <div class="container">
+                <div class="wrapper_empty">
+                    <div class="basket_empty">
+                        <img src={% static "images/empty_basket.png"%} alt="basket">
+                        <div class="title">Basket is empty</div>
+                        <div class="sub_title">But it's never too late to fix it :)</div>
+                        <a href={% url 'home' %} class="another_link"><p>Back to home</p></a>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="container">
+                <div class="page_title">Basket</div>
+                <div class="wrapper_goods">
+                    <div class="column_wrapper">
+                        {% for product_image in products_list %}
+                        <div class="column_goods" alt='' >
+                            <div class="column_goods_dev">
+                                <a href="{% url 'product' product_image.product.id %}">
+                                    <img src="{{ product_image.image.url }}" alt="headphones" class="goods_item">
+                                </a>
+                                <div class="counter">
+                                    <form action="{% url 'counter_add' %}"
+                                      method="post"
+                                      data-product_id = '{{ product_image.product.id }}'>{%  csrf_token %}
+                                        <div class="counter_minus" id="minus_btn">
+                                            <div class="minus"></div>
+                                        </div>
+                                    </form>
+                                    <div class="counter_number">1</div>
+                                    <form action="{% url 'counter_add' %}"
+                                      method="post"
+                                      data-product_id = '{{ product_image.product.id }}'>{%  csrf_token %}
+                                        <div class="counter_plus">
+                                            +
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="column_goods_dev">
+                                <div class="column_goods_descr">
+                                    <p>{{product_image.product.name}}</p>
+                                    <span class="price price-grey">{{product_image.product.price}} £</span>
+                                </div>
+                            </div>
+                            <div class="column_goods_dev">
+                                <form action="{% url 'delete_item_in_basket' %}"
+                                      method="post"
+                                      id="delete-item"
+                                      data-product_id = '{{ product_image.product.id }}'>{%  csrf_token %}
+                                    <img src={% static "icons/delete.svg" %} alt="{{product_image.product.name}}" class="delite_image" id="delete_image">
+                                </form>
+                                <span class="price">{{product_image.product.price}} £</span>
+                            </div>
+                        </div>
+                        {%  endfor %}
+                    </div>
+                    <div class="result">
+                        <div class="result_price">
+                            <p class="price price-black">Total</p>
+                            <span class="price price-black" id="total-price">{{total_price}} £</span>
+                        </div>
+                        <a href="" class="result_btn">
+                            Make an order
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endblock content%}
+<!--content-->
