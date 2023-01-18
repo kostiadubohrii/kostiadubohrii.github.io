@@ -9,10 +9,8 @@ There are directories with my projects.
  - web-apps
 
 
-```
-ruby
-### **web-sites**
-```
+
+###  #61DBFB **web-sites**
 | There are just single page sites with HTML, CSS( SASS or SCSS ) and JS.
 
 ### **web-apps(django)**
