@@ -3,10 +3,7 @@
 # dependencies
 /node_modules
 /.jshintrc
-/gulpfile.js
-/package-lock.json
-/package.json
-/webpack.config.js
+
 
 # testing
 /coverage
