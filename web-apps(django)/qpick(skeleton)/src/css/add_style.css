@@ -1,0 +1,36 @@
+.good_logo form {
+    padding: 0;
+    margin: 0;
+}
+.good_logo #heart {
+    background-image: url(../icons/hearts/empty_heart.svg) no-repeat center;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    padding: 5px;
+}
+.basket-form {
+    padding: 0;
+    margin: 0;
+}
+.basket-btn {
+    width: 254px;
+    height: 45px;
+    background: #101010;
+    box-shadow: 0 0 15px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    padding-left: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-image: url(../icons/trolley/white-trolley.svg);
+    background-repeat: no-repeat;
+    background-position:  left 30px bottom 50%;
+}

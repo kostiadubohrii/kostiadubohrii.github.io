@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0px 0px;
+    margin-top: 60px;
+    padding: 29px;
+    .terms {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: center;
+        .lengs {
+            display: flex;
+            justify-content: space-between;
+            
+            p {
+                cursor: pointer;
+            }
+            span {
+                font-weight: 700;
+                color: #FFA542;
+            }
+        }
+    }
+    .socials {
+        margin-right: 16px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

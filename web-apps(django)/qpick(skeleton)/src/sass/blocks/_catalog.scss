@@ -1,0 +1,108 @@
+.catalog {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+        text-decoration: none;
+    }
+    &_item {
+        width: 350px;
+        height: 407px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        margin-top: 20px;
+        position: relative;
+        margin-right: 25px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &_img {
+            margin-top: 25px;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 151px;
+            }
+        }
+        &_text {
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 17px;
+            color: #1C1C27;
+            text-align: center;    
+        }
+        &_top {
+            margin-top: 18px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: end;
+            height: 235px;  
+            &_heart {
+                position: absolute;
+                top: 3px;
+                left: 20px; 
+                img {
+                    cursor: pointer;
+                }
+            }
+            &_apple {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+            }
+            &_image {
+                img {
+                    max-width: 219px;
+                    max-height: 237px;
+                }
+            }
+        }
+        &_desc {
+            display: flex;
+            width: 310px;
+            margin: 0 auto;
+            margin-top: 55px;
+            justify-content: space-between;
+            .item_name {
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 21px;
+                color: #1C1C27;
+                a {
+                    color: #1C1C27;
+                }
+            }
+            .item_price {
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 21px;
+                color: #FFA542;
+                span {
+                    font-size: 13px;
+                    line-height: 16px;
+                    text-decoration-line: line-through;
+                    color: #FFCE7F;                    
+                }
+            }
+        }
+        &_review {
+            position: absolute;
+            bottom: 30px;
+            img {
+                margin-left: 20px;
+            }
+            span {
+                position: absolute;
+                left: 55px;
+                top: 4px;
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 21px;
+                color: #838383;
+            }
+        }
+    }
+}
