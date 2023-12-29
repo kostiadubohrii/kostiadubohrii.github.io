@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QPICK - Умови сервіса</title>
+    <link rel="stylesheet" href={% static "css/style.min.css" %}>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper_devider">
+        <div>
+            <div class="container">
+                <div class="header">
+                    <div class="header_distributor">
+                        <a href={% url 'index'%} class="logo" >QPICK</a>
+                    </div>
+        
+                    <div class="header_distributor">
+                        <!-- <form method="POST" class="search">
+                            <input type="text" name="search" class="search" id="search" placeholder="Пошук">
+                            <input type="submit" value="" class="find">
+                        </form> -->
+                    </div>
+        
+                    <div class="header_distributor">
+                        <div class="header_manipulator">
+                            <a href={% url 'favourites' %}><img src={% static "icons//header/heart.svg" alt="heart %} ></a>
+                            <a href={% url 'basket' %}><img src={% static "icons//header/trolley.svg" alt="trolley %}></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts_office">
+                        <div class="contacts_office_title">Наший офіс</div>
+                        <div class="contacts_office_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.5268301841328!2d30.515993024252708!3d50.43589970666092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefc5343eb19%3A0x6c612b6964f96c6c!2z0YPQuy4g0KHQsNC60YHQsNCz0LDQvdGB0LrQvtCz0L4sIDE2LCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LAsIDAyMDAw!5e0!3m2!1sru!2suk!4v1665772035609!5m2!1sru!2suk" width="722" height="424" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="contacts_office_address">
+                            <img src={% static "icons/mark.svg" %} alt="mark">
+                            <p>вул. Саксаганського, 16, Київ, Україна, 02000<br>
+                            <span>3 поверх 35 кабінет</span></p>
+                        </div>
+                    </div>
+                    <div class="contacts_socials">
+                        <div><img src={% static "icons/social/whatsapp.svg" %}  alt="whatsapp"></div>
+                        <div><img src={% static "icons/social/instagram.svg" %}  alt="instagram"></div>
+                        <div><img src={% static "icons/social/telegram.svg" %}  alt="telegram"></div>
+                    </div>
+                </div>
+                <div class="phone">
+                    <img src={% static "icons/phone.svg" %} alt="phone">
+                    <p>+38 777 777 77 77</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="footer">
+                    <div>
+                        <a href={% url 'index'%} class="logo" >QPICK</a>
+                    </div>
+                    <div>
+                        <a href={% url "favourites" %} class="links">Улюблене</a>
+                        <a href={% url "basket" %} class="links">Корзина</a>
+                        <a href={% url "contacts" %} class="links">Контакти</a>
+                    </div>
+                    <div>
+                        <div class="terms">
+                            <a href={% url "terms" %} class="links">Умови сервіса</a>
+                            <!-- <div>
+                                <div class="lengs">
+                                    <img src="icons/earth.svg" alt="earth">
+                                    <p>
+                                        <span>Укр</span>
+                                    </p>
+                                    <p>Eng</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div>
+                        <img src={% static "icons/social/instagram.svg" %} alt="instagram" class="socials">
+                        <img src={% static "icons/social/telegram.svg" %} alt="telegram" class="socials">
+                        <img src={% static "icons/social/whatsapp.svg" %} alt="whatsapp" class="socials">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

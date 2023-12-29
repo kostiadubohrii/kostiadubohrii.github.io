@@ -1,0 +1,85 @@
+{% extends "base.html"%}
+{% load static %}
+
+<!--header-->
+
+    {% block page_title %}
+        QPICK - {{product.name}}
+    {% endblock  %}
+<!--header-->
+
+<!--content-->
+    {% block content %}
+    <div class="container">
+        <div class="title">{{product.global_name}}</div>
+    </div>
+    <div class="container">
+        <div class="good">
+            <div class="good_logo">
+                <form action="{% url 'basket_adding' %}" method="post" id="fav-form">
+                    {% csrf_token %}
+                    <img src={% static  "icons/hearts/solid_heart.svg"%} alt="" class='heart' id='heart'>
+                </form>
+                <div class="logo">
+                    {% for logo_item in product.productlogo_set.all %}
+                        {% if logo_item %}
+                            <img src={{ logo_item.logo.url }} alt="">
+                        {% else %}
+                            <img src="" alt="">
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="good_images">
+                <div class="good_images_item">
+                    {% for image_item in product.productimage_set.all %}
+                        <img src="{{ image_item.image.url }}" alt="AirPods">
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="good_price">
+                <div class="good_price_title">
+                    {{product.name}}
+                </div>
+                <div class="good_price_price">
+                    <div class="price">
+                        {{product.price}} £
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="good_wrapper">
+            <div class="good_wrapper_descr">
+                <div class="good_wrapper_descr_header">Опис та характеристики</div>
+                <div class="good_wrapper_descr_text">
+                    {% for descr_item in descr %}
+                    <div>
+                        {{descr_item}} <br>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="buy_basket">
+                <div class="buy">
+                    Buy!
+                </div>
+                <form action="{% url 'basket_adding' %}"
+                      method="post" 
+                      id="basket-form" 
+                      data-product_id = '{{ product.id }}' 
+                      data-name = '{{ product.name }}'
+                      data-price = '{{ product.price }}'
+                      data-id = '{{product.id}}'
+                      >{%  csrf_token %}
+
+                    <div class="basket-btn" id="basket-btn"><img src={% static "icons/trolley/white-trolley.svg"%} alt="">
+                        <div>Add to the basket</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {% endblock content%}
+<!--content-->

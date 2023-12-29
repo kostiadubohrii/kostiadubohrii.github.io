@@ -1,0 +1,99 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title %} {% endblock  %}</title>
+    <link rel="stylesheet" href={% static "css/style.min.css" %}>
+    <link rel="stylesheet" href={% static "css/add_style.css" %}>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper_devider">
+        <div>
+            <div class="container">
+                <div class="header">
+                    <div class="header_distributor">
+                        <a href={% url 'home' %} class="logo" >QPICK</a>
+                    </div>
+
+                    <div class="header_distributor">
+                        {% block search_panel%}
+                        {% endblock search_panel%}
+                    </div>
+
+                    <div class="header_distributor">
+                        <div class="header_manipulator">
+                            <a href="#">
+                                <img src={% static "icons//header/heart.svg" alt="heart %}>
+                                <div class="fav-items-counter">
+
+                                </div>
+                            </a>
+                            <a href={% url 'basket' %}>
+                                <img src={% static "icons//header/trolley.svg" alt="trolley %}>
+                                {% if amount_of_products > 0 %}
+                                    <div class="basket-items-counter">
+                                        {{amount_of_products}}
+                                    </div>
+                                {% endif %}
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            {% block content %}
+            {% endblock content%}
+        </div>
+        <div>
+            <div class="container">
+                <div class="footer">
+                    <div>
+                        <a href={% url 'home' %} class="logo" >QPICK</a>
+                    </div>
+                    <div>
+                        <a href="" class="links">Улюблене</a>
+                        <a href={% url 'basket' %} class="links">Корзина</a>
+                        <a href="" class="links">Контакти</a>
+                    </div>
+                    <div>
+                        <div class="terms">
+                            <a href={% url 'terms' %} class="links">Умови сервіса</a>
+                            <!-- <div>
+                                <div class="lengs">
+                                    <img src="icons/earth.svg" alt="earth">
+                                    <p>
+                                        <span>Укр</span>
+                                    </p>
+                                    <p>Eng</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div>
+                        <img src={% static "icons/social/instagram.svg" %} alt="instagram" class="socials">
+                        <img src={% static "icons/social/telegram.svg" %} alt="telegram" class="socials">
+                        <img src={% static "icons/social/whatsapp.svg" %} alt="whatsapp" class="socials">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src={% static "js/jquery.js"%}></script> 
+    <script src={% static "js/script.js"%}></script>
+</body>
+</html>

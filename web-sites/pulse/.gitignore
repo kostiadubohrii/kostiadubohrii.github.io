@@ -3,9 +3,6 @@
 # dependencies
 /node_modules
 /.jshintrc
-/gulpfile.js
-/package-lock.json
-/package.json
 
 # testing
 /coverage

@@ -3,9 +3,12 @@
 # dependencies
 /node_modules
 /.jshintrc
+<<<<<<< HEAD
 /gulpfile.js
 /package-lock.json
 /package.json
+=======
+>>>>>>> 54fa3f371113bd5a6cff885e61abfa11385d7310
 /sass
 # testing
 /coverage

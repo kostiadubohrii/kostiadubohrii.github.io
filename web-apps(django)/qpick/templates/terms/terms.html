@@ -1,0 +1,27 @@
+{% extends "base.html"%}
+{% load static %}
+
+<!--header-->
+
+    {% block page_title %}
+        {{name}}
+    {% endblock  %}
+
+<!--header-->
+
+<!--content-->
+    {% block content %}
+        <div>
+            <div class="container">
+             {% for term in terms %}
+                <div class="terms_item">
+                  <div class="terms_item_title">{{term.title}}</div>
+                  <div class="terms_item_text">
+                      {{ term.text }}
+                  </div>
+                </div>
+            {% endfor%}
+              </div>
+        </div>
+    {% endblock content%}
+<!--content-->
