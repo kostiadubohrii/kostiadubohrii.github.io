@@ -1,10 +1,11 @@
-const forms = () => {
+import checkNumInputs from "./checkNumInputs";
+
+const forms = (state) => {
     const forms = document.querySelectorAll('form'),
           inputs = document.querySelectorAll('input');
+        
+    checkNumInputs('input[name="user_phone"]')
     
-    const messages = {
-        failure: 'An error has just occured...'
-    };
     let loadingImage = document.createElement('img');
     loadingImage.src = './assets/slick/ajax-loader.gif';
     loadingImage.id = 'loadingImage';
@@ -12,12 +13,12 @@ const forms = () => {
     let completeImage = document.createElement('img');
     completeImage.src = './assets/img/status/complete.gif';
     completeImage.id = 'completeImage';
-    completeImage.style.height = '70px';
+    completeImage.style.height = '80px';
 
     let failureImage = document.createElement('img');
     failureImage.src = './assets/img/status/failure.gif';
     failureImage.id = 'failureImage';
-    failureImage.style.height = '70px';
+    failureImage.style.height = '80px';
 
 
     const postData = async (url, data) => {
@@ -36,6 +37,9 @@ const forms = () => {
             item.value = '';
         })
     }
+    const clearState = () => {
+        state = {};
+    }
 
     forms.forEach(item => {
         item.addEventListener('submit', (e) => {
@@ -46,6 +50,11 @@ const forms = () => {
             item.appendChild(statusMessage);
 
             const formData = new FormData(item);
+            if (item.getAttribute('data-calc') === "end"){
+                for (let key in state) {
+                    formData.append(key, state[key]);
+                }
+            }
             
             postData('assets/server.php', formData)
                 .then(res => {
@@ -59,6 +68,8 @@ const forms = () => {
                 })
                 .finally(() => {
                     clearInputs();
+                    clearState();
+                    console.log(state)
                     setTimeout(() => {
                         document.querySelector('#completeImage').remove()
                     }, 2100);
