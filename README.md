@@ -1,25 +1,19 @@
 # About this repository
----
-Hi, I'm Kostia 
-In this repository are some of my web-sites and web-apps that I've ever developed. 
+> This repository is my portfolio. Here you can see code of my web projects that are written in different lenguages and frameworks. 
 
-There are directories with my projects. 
- - web-sites
- - web-apps(django) 
- - web-apps
-
-
-
+## Description: 
 ### **web-sites**
-| There are just single page sites with HTML, CSS( SASS or SCSS ) and JS.
+| They are single page web-sites built on HTML, CSS( SASS or SCSS ) and JS. 
+| Futhermore, commerce has it's own server so it can recieve some requests.
 List of sites:
   - [Pulse](https://kostiadubohrii.github.io/web-sites/pulse/src/)
-  - [UBER](https://kostiadubohrii.github.io/web-sites/UDER_course/src/)
-  - [Food](https://kostiadubohrii.github.io/web-sites/food/)
+  - [UBER](https://kostiadubohrii.github.io/web-sites/UDER_course/src/) - requires translation
+  - [Food](https://kostiadubohrii.github.io/web-sites/food/) - requires translation
+  - [Commerce](https://kostiadubohrii.github.io/web-sites/commerce/dist/) - requires translation
 
 
 ### **web-apps(django)**
-  | This directory includes only web-apps that was created using django framework. The QPick it is an exaple or unreal shop that producing some gadgets.
-  - [QPick](https://kostiadubohrii.github.io/web-apps(django)/qpick(skeleton)/src/index.html) - just HTML and CSS
+  | This directory includes only web-apps that was created using django framework. The QPick it is an exaple or a e-commerce application, which produces some gadgets.
+  - [QPick](https://kostiadubohrii.github.io/web-apps(django)/qpick(skeleton)/src/index.html) - so far mark up only HTML and CSS.
 ### **web-apps**
-  | "It is about" React "web-apps."
+  | "This directory will contain some React web-apps."
