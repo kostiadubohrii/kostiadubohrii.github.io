@@ -1,0 +1,49 @@
+{
+  "heroes": [
+    {
+      "id": "cafc8af8-aa03-4e3f-9a42-b3eab06e92b3",
+      "name": "Superman ",
+      "description": "Basically, everything))",
+      "element": "water"
+    },
+    {
+      "id": "904751e3-11a4-458d-bc96-4c25c31e3f39",
+      "name": "Hancock",
+      "description": "Reckless superhero whose chaotic efforts have made him wildly unpopular",
+      "element": "wind"
+    },
+    {
+      "id": "971b61dd-5444-4994-b57b-c985563d2c7b",
+      "name": "A dude",
+      "description": "Super dude, the best dude on the west))",
+      "element": "fire"
+    }
+  ],
+  "filters": [
+    {
+      "eng": "all",
+      "rus": "Все",
+      "colour": "dark"
+    },
+    {
+      "eng": "fire",
+      "rus": "Огонь",
+      "colour": "danger"
+    },
+    {
+      "eng": "water",
+      "rus": "Вода",
+      "colour": "primary"
+    },
+    {
+      "eng": "wind",
+      "rus": "Ветер",
+      "colour": "success"
+    },
+    {
+      "eng": "earth",
+      "rus": "Земля",
+      "colour": "secondary"
+    }
+  ]
+}
